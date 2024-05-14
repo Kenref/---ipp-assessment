@@ -23,12 +23,29 @@
 
       <!-- left sidebar -->
       <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
-        id="offcanvasScrolling">
-        <div class="offcanvas-header ">
+        id="offcanvasScrolling" style="background-color: #F8F9FA;">
+        <div class="offcanvas-header">
           <a class="navbar-brand" href="#">Logo Here</a>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
 
+        <p class="d-inline-flex gap-1 justify-content-center">
+          <a class="btn btn-light px-5 " data-bs-toggle="collapse" href="#collapse" role="button">
+            Dashboards
+          </a>
+        </p>
+        <div class="collapse" id="collapse">
+          <div>
+            <ul style="list-style: none; text-decoration: none;"
+              class="d-flex flex-column justify-content-center align-items-center me-4">
+              <li class="btn btn-light px-5 ">Analytics</li>
+              <li class="btn btn-light px-5 ">Commerce</li>
+              <li class="btn btn-light px-5 ">Sales</li>
+              <li class="btn btn-light px-5 ">Minimal</li>
+              <li class="btn btn-light px-5 ">CRM</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <!-- end left sidebar -->
@@ -130,7 +147,7 @@
         </div>
       </div>
 
-      <div class="d-flex gap-4">
+      <div class="d-flex gap-4 flex-sm-col ">
         <div class="card my-5" style="width: 50%;">
           <div class="card-header">
             Metrics
@@ -181,6 +198,9 @@
                 </li>
                 <li class="page-item"><a class="page-link" href="#">2</a></li>
                 <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+
               </ul>
             </nav>
           </div>
