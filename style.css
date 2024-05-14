@@ -2,6 +2,6 @@
   background-color: #E7EAED;
 }
 
-* {
+*, body {
   background-color: var(background-color);
 }
