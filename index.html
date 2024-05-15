@@ -31,19 +31,22 @@
 
         <div class="container">
           <div class="row">
-            <a class="btn btn-light" data-bs-toggle="collapse" href="#dashboards" role="button">
-              Dashboards <i class="bi bi-chevron-down"></i>
+            <a class="btn btn-light" data-bs-toggle="collapse" href="#dashboards" role="button" id="dash"><i
+                class="bi bi-speedometer2"></i>
+              Dashboards <i class="bi bi-chevron-down" id="dashIcon"></i>
             </a>
 
             <div class="collapse" id="dashboards">
               <div>
                 <ul style="list-style: none; text-decoration: none;"
                   class="d-flex flex-column justify-content-center align-items-center me-5 ">
-                  <li class="btn btn-light col-12 ">Analytics</li>
-                  <li class="btn btn-light col-12 ">Commerce</li>
-                  <li class="btn btn-light col-12 ">Sales</li>
-                  <li class="btn btn-light col-12 ">Minimal</li>
-                  <li class="btn btn-light col-12 ">CRM</li>
+                  <li class="btn btn-light col-12 "><i class="bi bi-bar-chart-fill"></i>
+
+                    Analytics
+                  </li>
+                  <li class="btn btn-light col-12 "><i class="bi bi-bag-check"></i> Commerce</li>
+                  <li class="btn btn-light col-12 "><i class="bi bi-receipt"></i> Sales</li>
+                  <li class="btn btn-light col-12 "><i class="bi bi-person-lines-fill"></i> CRM</li>
                 </ul>
               </div>
             </div>
@@ -52,18 +55,18 @@
 
         <div class="container">
           <div class="row">
-            <a class="btn btn-light" data-bs-toggle="collapse" href="#pages" role="button">
-              Pages <i class="bi bi-chevron-down"></i>
+            <a class="btn btn-light" data-bs-toggle="collapse" href="#pages" role="button" id="page"><i
+                class="bi bi-file-earmark"></i>
+              Pages <i class="bi bi-chevron-down" id="pageIcon"></i>
             </a>
 
             <div class="collapse" id="pages">
               <div>
                 <ul style="list-style: none; text-decoration: none;"
                   class="d-flex flex-column justify-content-center align-items-center me-5 ">
-                  <li class="btn btn-light col-12 ">Login</li>
-                  <li class="btn btn-light col-12 ">Login boxed</li>
-                  <li class="btn btn-light col-12 ">Register</li>
-                  <li class="btn btn-light col-12 ">Forgot Password</li>
+                  <li class="btn btn-light col-12 "><i class="bi bi-box-arrow-in-right"></i> Login</li>
+                  <li class="btn btn-light col-12 "><i class="bi bi-r-circle-fill"></i> Register</li>
+                  <li class="btn btn-light col-12 "><i class="bi bi-key"></i> Forgot Password</li>
                 </ul>
               </div>
             </div>
@@ -71,18 +74,19 @@
         </div>
         <div class="container">
           <div class="row">
-            <a class="btn btn-light" data-bs-toggle="collapse" href="#apps" role="button">
-              Applications <i class="bi bi-chevron-down"></i>
+            <a class="btn btn-light" data-bs-toggle="collapse" href="#apps" role="button" id="application"><i
+                class="bi bi-app-indicator"></i>
+              Applications <i class="bi bi-chevron-down" id="applicationIcon"></i>
             </a>
 
             <div class="collapse" id="apps">
               <div>
                 <ul style="list-style: none; text-decoration: none;"
                   class="d-flex flex-column justify-content-center align-items-center me-5 ">
-                  <li class="btn btn-light col-12 ">Mailbox</li>
-                  <li class="btn btn-light col-12 ">Chat</li>
-                  <li class="btn btn-light col-12 ">FAQ</li>
-                  <li class="btn btn-light col-12 ">Forums</li>
+                  <li class="btn btn-light col-12 "><i class="bi bi-envelope"></i> Mailbox</li>
+                  <li class="btn btn-light col-12 "><i class="bi bi-chat"></i> Chat</li>
+                  <li class="btn btn-light col-12 "><i class="bi bi-question"></i> FAQ</li>
+                  <li class="btn btn-light col-12 "><i class="bi bi-wechat"></i> Forums</li>
                 </ul>
               </div>
             </div>
@@ -327,7 +331,36 @@
 
 
 
+  <script>
+    const dashboards = document.getElementById("dash")
+    const dashboardIcon = document.getElementById("dashIcon")
 
+    const pages = document.getElementById("page")
+    const pagesIcon = document.getElementById("pageIcon")
+
+    const applications = document.getElementById("application")
+    const applicationIcon = document.getElementById("applicationIcon")
+
+    const iconChanger = (element, icon) => {
+      element.addEventListener("click", (e) => {
+        if (icon.classList.contains("bi-chevron-down")) {
+          icon.classList.remove("bi-chevron-down")
+          icon.classList.add("bi-chevron-up")
+        } else {
+          icon.classList.remove("bi-chevron-up")
+          icon.classList.add("bi-chevron-down")
+        }
+      })
+    }
+
+    iconChanger(dashboards, dashboardIcon)
+    iconChanger(pages, pagesIcon)
+    iconChanger(applications, applicationIcon)
+
+
+
+
+  </script>
 
   <script type="module" src="/main.js"></script>
 </body>
