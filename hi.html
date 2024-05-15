@@ -16,178 +16,150 @@
 
 <body>
   <!-- fixed top -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg  bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">Logo</a>
-      <div class="collapse navbar-collapse" id="navToggle">
+      <button class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"><i
+          class="bi bi-list"></i></button>
 
-        <div class="container row">
-          <div class="row justify-content-start">
 
-            <div class="col-sm-12 col-lg-3">
-              <div class="row">
-                <div class="col-sm-12 justify-content-center  ">
-                  <a class="btn btn-light" data-bs-toggle="collapse" href="#dashboards" role="button" id="dash"><i
-                      class="bi bi-speedometer2"></i>
-                    Dashboards <i class="bi bi-chevron-down" id="dashIcon"></i>
-                  </a>
-                </div>
+      <!-- left sidebar -->
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" style="background-color: #F8F9FA;">
+        <div class="offcanvas-header">
+          <a class="navbar-brand" href="#">Logo Here</a>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
 
-                <div class="collapse" id="dashboards">
-                  <div>
-                    <ul style="list-style: none; text-decoration: none;" class="d-lg-flex flex-lg-column">
-                      <li class="btn btn-light me-auto "><i class="bi bi-bar-chart-fill"></i>
-                        Analytics
-                      </li>
-                      <li class="btn btn-light me-auto ">
-                        <i class="bi bi-bag-check"></i>
-                        Commerce
-                      </li>
-                      <li class="btn btn-light me-auto ">
-                        <i class="bi bi-receipt"></i>
-                        Sales
-                      </li>
-                      <li class="btn btn-light me-auto ">
-                        <i class="bi bi-person-lines-fill"></i>
-                        CRM
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="container">
+          <div class="row">
+            <a class="btn btn-light" data-bs-toggle="collapse" href="#dashboards" role="button" id="dash"><i
+                class="bi bi-speedometer2"></i>
+              Dashboards <i class="bi bi-chevron-down" id="dashIcon"></i>
+            </a>
 
-            <div class="col-sm-12 col-lg-3">
-              <div class="row">
-                <div class="col-sm-12 justify-content-center  ">
-                  <a class="btn btn-light" data-bs-toggle="collapse" href="#pages" role="button" id="page"><i
-                      class="bi bi-speedometer2"></i>
-                    Pages <i class="bi bi-chevron-down" id="pageIcon"></i>
-                  </a>
-                </div>
+            <div class="collapse" id="dashboards">
+              <div>
+                <ul style="list-style: none; text-decoration: none;"
+                  class="d-flex flex-column justify-content-center align-items-center me-5 ">
+                  <li class="btn btn-light col-12 "><i class="bi bi-bar-chart-fill"></i>
 
-                <div class="collapse" id="pages">
-                  <div>
-                    <ul style="list-style: none; text-decoration: none;" class="d-lg-flex flex-lg-column">
-                      <li class="btn btn-light me-auto "><i class="bi bi-bar-chart-fill"></i>
-                        Login
-                      </li>
-                      <li class="btn btn-light me-auto ">
-                        <i class="bi bi-bag-check"></i>
-                        Register
-                      </li>
-                      <li class="btn btn-light me-auto ">
-                        <i class="bi bi-receipt"></i>
-                        Forgot Password
-                      </li>
-                      <li class="btn btn-light me-auto ">
-                        <i class="bi bi-person-lines-fill"></i>
-                        CRM
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-12 col-lg-3">
-              <div class="row">
-                <div class="col-sm-12 justify-content-center  ">
-                  <a class="btn btn-light" data-bs-toggle="collapse" href="#apps" role="button" id="application"><i
-                      class="bi bi-speedometer2"></i>
-                    Dashboards <i class="bi bi-chevron-down" id="applicationIcon"></i>
-                  </a>
-                </div>
-
-                <div class="collapse" id="apps">
-                  <div>
-                    <ul style="list-style: none; text-decoration: none;" class="d-lg-flex flex-lg-column">
-                      <li class="btn btn-light me-auto "><i class="bi bi-bar-chart-fill"></i>
-                        Mailbox
-                      </li>
-                      <li class="btn btn-light me-auto ">
-                        <i class="bi bi-bag-check"></i>
-                        Chat
-                      </li>
-                      <li class="btn btn-light me-auto ">
-                        <i class="bi bi-receipt"></i>
-                        Forums
-                      </li>
-                      <li class="btn btn-light me-auto ">
-                        <i class="bi bi-person-lines-fill"></i>
-                        FAQ
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+                    Analytics
+                  </li>
+                  <li class="btn btn-light col-12 "><i class="bi bi-bag-check"></i> Commerce</li>
+                  <li class="btn btn-light col-12 "><i class="bi bi-receipt"></i> Sales</li>
+                  <li class="btn btn-light col-12 "><i class="bi bi-person-lines-fill"></i> CRM</li>
+                </ul>
               </div>
             </div>
           </div>
+        </div>
 
+        <div class="container">
+          <div class="row">
+            <a class="btn btn-light" data-bs-toggle="collapse" href="#pages" role="button" id="page"><i
+                class="bi bi-file-earmark"></i>
+              Pages <i class="bi bi-chevron-down" id="pageIcon"></i>
+            </a>
+
+            <div class="collapse" id="pages">
+              <div>
+                <ul style="list-style: none; text-decoration: none;"
+                  class="d-flex flex-column justify-content-center align-items-center me-5 ">
+                  <li class="btn btn-light col-12 "><i class="bi bi-box-arrow-in-right"></i> Login</li>
+                  <li class="btn btn-light col-12 "><i class="bi bi-r-circle-fill"></i> Register</li>
+                  <li class="btn btn-light col-12 "><i class="bi bi-key"></i> Forgot Password</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <a class="btn btn-light" data-bs-toggle="collapse" href="#apps" role="button" id="application"><i
+                class="bi bi-app-indicator"></i>
+              Applications <i class="bi bi-chevron-down" id="applicationIcon"></i>
+            </a>
+
+            <div class="collapse" id="apps">
+              <div>
+                <ul style="list-style: none; text-decoration: none;"
+                  class="d-flex flex-column justify-content-center align-items-center me-5 ">
+                  <li class="btn btn-light col-12 "><i class="bi bi-envelope"></i> Mailbox</li>
+                  <li class="btn btn-light col-12 "><i class="bi bi-chat"></i> Chat</li>
+                  <li class="btn btn-light col-12 "><i class="bi bi-question"></i> FAQ</li>
+                  <li class="btn btn-light col-12 "><i class="bi bi-wechat"></i> Forums</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
 
 
-
-
-        <ul class="navbar-nav ms-2 mb-2 mb-lg-0">
-          <li class="nav-item">
-            <div class="dropdown">
-              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                Mega Menu
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Page1</a></li>
-                <li><a class="dropdown-item" href="#">Page2</a></li>
-                <li><a class="dropdown-item" href="#">Page3</a></li>
-              </ul>
-          </li>
-          <li class="nav-item">
-            <div class="dropdown">
-              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                Settings
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Page1</a></li>
-                <li><a class="dropdown-item" href="#">Page2</a></li>
-                <li><a class="dropdown-item" href="#">Page3</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <div class="dropdown">
-              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                Projects
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Page1</a></li>
-                <li><a class="dropdown-item" href="#">Page2</a></li>
-                <li><a class="dropdown-item" href="#">Page3</a></li>
-              </ul>
-            </div>
-          </li>
-
-        </ul>
-
-
       </div>
-      <div>
+
+      <!-- end left sidebar -->
+
+      <div class="d-flex align-items-center">
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            Mega Menu
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Page1</a></li>
+            <li><a class="dropdown-item" href="#">Page2</a></li>
+            <li><a class="dropdown-item" href="#">Page3</a></li>
+
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            Settings
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Page1</a></li>
+            <li><a class="dropdown-item" href="#">Page2</a></li>
+            <li><a class="dropdown-item" href="#">Page3</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            Projects
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Page1</a></li>
+            <li><a class="dropdown-item" href="#">Page2</a></li>
+            <li><a class="dropdown-item" href="#">Page3</a></li>
+          </ul>
+        </div>
         <button id="searchButton" class="btn"><i class="bi bi-search"></i></button>
         <input id="searchBar" class="collapse rounded ">
       </div>
 
-      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navToggle">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+
+      <div class="d-flex align-items-center gap-5 text-center">
+        <div class="d-flex ms-5 gap-2 align-items-start">
+          <a href=""><i class="bi bi-person-circle"></i></a>
+          <h1 class="fs-6">Name</h1>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+
+
+      <!-- right sidebar -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Servers Status</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <!-- end right sidebar -->
+      </div>
+
+
+
     </div>
-
-  </nav>
-
-
-
-
-
-
-  </div>
   </nav>
 
 
